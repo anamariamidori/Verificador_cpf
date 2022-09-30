@@ -3,7 +3,7 @@
 #include <stdio.h>
 int main(void) {
     int cpf[11];
-    int i =0;
+    int i = 0;
     int a = 0;
     int a1 = 0;
     int multiplica = 0;
@@ -14,12 +14,12 @@ int main(void) {
     int conta1 = 0;
     int verifica = 0;
     int verifica1 = 0;
-    for (i = 0; i <= 10; i++){
+    for (i = 0; i <= 10; i++){/*recebe os valores do cpf*/
         printf("\n digite o numero %d do cpf ", i);
         scanf("%d", &cpf[i]);
         printf("\n cpf digitado foi: %d  ", cpf[i]);
     }
-    for (i = 0; i<=8; i++){
+    for (i = 0; i<=8; i++){/*verifica primeiro digito*/
       multiplica = 10-a;
       a = a +1;
       conta = multiplica * cpf[i];
@@ -37,7 +37,7 @@ int main(void) {
         printf("\n cpf inválido");
         return 0;
     }
-   for (i = 0; i<=9; i++){
+   for (i = 0; i<=9; i++){/*verifica segundo digito*/
       multiplica1 = 11 - a1;
       a1 = a1 +1;
       conta1 = multiplica1 * cpf[i];
